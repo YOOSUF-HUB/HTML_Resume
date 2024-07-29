@@ -1,0 +1,101 @@
+html{
+    background-color:rgb(0, 0, 0) ;
+}
+
+nav{
+    padding: 20px;
+    background-color: antiquewhite;
+}
+nav ul{
+    list-style-type: none;
+    justify-content: space-around;
+    display:flex;
+}
+
+nav a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+*{
+    text-align: center;
+}
+
+p{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#name{
+    
+    color: #EEEEEE;
+    height: 100px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+img{
+    height: 400px;
+}
+
+.heading{
+    color: #EEEEEE;
+    font-family:'Courier New', Courier, monospace
+}
+
+/* Style the button */
+#other-button button {
+    background-color: black; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the buttons appear in a row */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 3px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+}
+
+#socialmedia{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: flex;
+}
+
+
+/* Remove underline from the link and set its color */
+#other-button a {
+    text-decoration: none;
+    color: white; /* Match the text color with button text color */
+}
+
+#other-button button a:hover{
+    font-size: 17px;
+}
+
+#skill-text{
+    color: black;
+    list-style: none;
+    padding: 12px;
+    text-align: left;
+}
+
+#skill{
+    
+    width: 400px;
+    border: none;
+    margin: 20px auto;
+    background-color:antiquewhite;
+}
+
+
+
