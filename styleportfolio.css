@@ -105,7 +105,7 @@ img{
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     nav ul {
         flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
