@@ -1,5 +1,6 @@
 html{
     background-color:rgb(0, 0, 0) ;
+    scroll-behavior:smooth ;
 }
 
 nav{
@@ -39,6 +40,11 @@ li{
     color: #EEEEEE;
     height: 100px;
     font-family:'Courier New', Courier, monospace;
+}
+
+#education-loc{
+    color: aliceblue;
+    list-style-type: none;
 }
 
 img{
@@ -103,9 +109,15 @@ img{
     background-color:antiquewhite;
 }
 
+footer {
+    font-weight:bold;
+    padding: 1px;
+    text-align: center;
+}
+
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     nav ul {
         flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
