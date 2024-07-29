@@ -10,6 +10,7 @@ nav ul{
     list-style-type: none;
     justify-content: space-around;
     display:flex;
+    flex-wrap: wrap; /* Allow items to wrap to new line if needed */
 }
 
 nav a{
@@ -42,6 +43,7 @@ li{
 
 img{
     height: 400px;
+    max-width: 100%; /* Ensure image scales down on smaller screens */
 }
 
 .heading{
@@ -71,6 +73,10 @@ img{
     display: flex;
 }
 
+#socialmedia:hover{
+    height: 60px;
+    width: 60px;
+}
 
 /* Remove underline from the link and set its color */
 #other-button a {
@@ -97,5 +103,72 @@ img{
     background-color:antiquewhite;
 }
 
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        padding: 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between nav items */
+    }
+
+    img {
+        height: auto;
+        max-width: 100%; /* Ensure image scales down on smaller screens */
+    }
+
+    #name {
+        height: auto;
+        font-size: 24px; /* Adjust font size */
+    }
+
+    #skill {
+        width: auto;
+        margin: 10px;
+    }
+
+    #other-button button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #socialmedia {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        padding: 0;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #skill-text {
+        text-align: center; /* Center text on very small screens */
+    }
+
+    #skill {
+        width: auto;
+        margin: 5px;
+    }
+
+    #other-button button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    #socialmedia {
+        height: 30px;
+        width: 30px;
+    }
+}
 
 
