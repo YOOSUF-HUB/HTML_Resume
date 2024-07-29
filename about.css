@@ -1,0 +1,19 @@
+html, body {
+    padding: 20px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headline{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
