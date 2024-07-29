@@ -60,7 +60,7 @@ img{
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Make the buttons appear in a row */
-    font-size: 16px; /* Increase font size */
+    font-size: 18px; /* Increase font size */
     margin: 4px 3px; /* Some margin */
     cursor: pointer; /* Pointer/hand icon */
     border-radius: 12px; /* Rounded corners */
@@ -133,12 +133,44 @@ img{
 
     #other-button button {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 25px;
     }
 
     #socialmedia {
-        height: 40px;
-        width: 40px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        padding: 0;
+        align-items: center;
+
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #skill-text {
+        text-align: center; /* Center text on very small screens */
+    }
+
+    #skill {
+        width: auto;
+        margin: 5px;
+    }
+
+    #other-button button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    #socialmedia {
+        height: 30px;
+        width: 30px;
     }
 }
 
