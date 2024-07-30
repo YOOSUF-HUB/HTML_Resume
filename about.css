@@ -120,35 +120,4 @@ nav a{
     }
 }
 
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically on smaller screens */
-        padding: 0;
-        align-items: center;
-
-    }
-
-    #name {
-        font-size: 20px;
-    }
-
-    #skill-text {
-        text-align: center; /* Center text on very small screens */
-    }
-
-    #skill {
-        width: auto;
-        margin: 5px;
-    }
-
-    #other-button button {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-
-    #socialmedia {
-        height: 30px;
-        width: 30px;
-    }
-}
 
