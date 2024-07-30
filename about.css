@@ -46,16 +46,14 @@ nav a{
     background-color: black; /* Green background */
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
+    padding: 15px 15px; /* Some padding */
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Make the buttons appear in a row */
     font-size: 18px; /* Increase font size */
-    margin: 4px 3px; /* Some margin */
     cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
 }
-
 #socialmedia{
     height: 50px;
     width: 50px;
@@ -63,9 +61,14 @@ nav a{
     display: flex;
 }
 
+#socialmedia{
+    height: 30px;
+    width: 30px;
+}
+
 #socialmedia:hover{
-    height: 60px;
-    width: 60px;
+    height: 32px;
+    width: 32px;
 }
 
 /* Remove underline from the link and set its color */
@@ -75,15 +78,16 @@ nav a{
 }
 
 #other-button button a:hover{
-    font-size: 17px;
+    font-size: 19px;
 }
 
+
 /* Media Queries for Responsiveness */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     nav ul {
-        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        /*flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
-        align-items: center;
+        /*align-items: center; */
     }
 
     nav ul li {
@@ -111,8 +115,8 @@ nav a{
     }
 
     #socialmedia {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
 }
 
