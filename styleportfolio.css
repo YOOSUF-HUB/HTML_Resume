@@ -3,10 +3,16 @@ html{
     scroll-behavior:smooth ;
 }
 
-nav{
+#social{
     padding: 20px;
     background-color: antiquewhite;
 }
+
+#other{
+    padding: 1px;
+    background-color: antiquewhite;
+}
+
 nav ul{
     list-style-type: none;
     justify-content: space-around;
@@ -62,26 +68,41 @@ img{
     background-color: black; /* Green background */
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
+    padding: 15px 15px; /* Some padding */
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Make the buttons appear in a row */
     font-size: 18px; /* Increase font size */
-    margin: 4px 3px; /* Some margin */
     cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
 }
 
-#socialmedia{
-    height: 50px;
-    width: 50px;
-    align-items: center;
+/* Remove space between social media icons */
+#other-button-social {
     display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#other-button-social li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#other-button-social a {
+    display: inline-block;
+}
+
+
+#socialmedia{
+    height: 30px;
+    width: 30px;
 }
 
 #socialmedia:hover{
-    height: 60px;
-    width: 60px;
+    height: 32px;
+    width: 32px;
 }
 
 /* Remove underline from the link and set its color */
@@ -91,7 +112,7 @@ img{
 }
 
 #other-button button a:hover{
-    font-size: 17px;
+    font-size: 19px;
 }
 
 #skill-text{
@@ -99,11 +120,10 @@ img{
     color: black;
     list-style: none;
     padding: 12px;
-    text-align: left;
 }
 
 #skill{
-    
+
     width: 400px;
     border: none;
     margin: 20px auto;
@@ -118,11 +138,11 @@ footer {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     nav ul {
-        flex-direction: column; /* Stack nav items vertically on smaller screens */
+       /* flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
-        align-items: center;
+       /* align-items: center; */
     }
 
     nav ul li {
@@ -150,8 +170,8 @@ footer {
     }
 
     #socialmedia {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
 }
 
