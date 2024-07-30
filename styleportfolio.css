@@ -138,7 +138,7 @@ footer {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     nav ul {
        /* flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
