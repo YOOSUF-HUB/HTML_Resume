@@ -140,9 +140,9 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 1000px) {
     nav ul {
-        flex-direction: column; /* Stack nav items vertically on smaller screens */
+       /* flex-direction: column; /* Stack nav items vertically on smaller screens */
         padding: 0;
-        align-items: center;
+       /* align-items: center; */
     }
 
     nav ul li {
