@@ -18,6 +18,8 @@ nav ul{
     justify-content: space-around;
     display:flex;
     flex-wrap: wrap; /* Allow items to wrap to new line if needed */
+    width: 200px;
+    align-items: center;
 }
 
 nav a{
@@ -68,8 +70,7 @@ img{
     background-color: black; /* Green background */
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 15px 15px; /* Some padding */
-    text-align: center; /* Center the text */
+    padding: 10px 10px; /* Some padding */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Make the buttons appear in a row */
     font-size: 18px; /* Increase font size */
@@ -113,6 +114,7 @@ img{
 
 #other-button button a:hover{
     font-size: 19px;
+    border-radius: 3px; /* Rounded corners */
 }
 
 #skill-text{
@@ -207,4 +209,13 @@ footer {
     }
 }
 
-
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    unicode-bidi: isolate;
+}
