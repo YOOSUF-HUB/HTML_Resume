@@ -1,0 +1,160 @@
+/* styleportfolio.css */
+
+/* Reset some default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Name styling with fade-in animation */
+#name {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Profile Picture styling with hover effect */
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Social media icons with bounce-in animation */
+#social {
+    margin-top: 15px;
+}
+
+#socialmedia {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    animation: bounceIn 1.2s ease;
+}
+
+#socialmedia:hover {
+    transform: scale(1.2);
+}
+
+/* Heading styling */
+.heading {
+    font-size: 1.8em;
+    color: #555;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Text animation for headings */
+.heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ff6f61;
+    transition: width 0.4s ease;
+}
+
+.heading:hover::after {
+    width: 100%;
+}
+
+/* Styling for lists in the Education and Skills sections */
+ul#education-loc, ul#skill-text {
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul#education-loc li, ul#skill-text li {
+    font-size: 1.1em;
+    padding: 8px 0;
+    color: #666;
+}
+
+/* Button styling with smooth hover */
+button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8f81;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Loader animation */
+.spinner-grow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #ff6f61;
+    animation: grow 1s infinite ease-in-out;
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Fade-in animation for elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce-in animation for social media icons */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
