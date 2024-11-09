@@ -148,6 +148,30 @@ p {
     padding: 10px;
 }
 
+/* Project Section */
+#project {
+    width: 400px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #fcffd7, #bdfff4); /* Initial background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, background 0.5s ease; /* Background transition duration */
+}
+
+#project:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    background: linear-gradient(135deg, #ffbe5d, #ffffff); /* Target background color */
+}
+
+
+#project-text {
+    font-weight: bolder;
+    color: black;
+    list-style: none;
+    padding: 10px;
+}
+
 /* Other Buttons Section */
 #other {
     padding: 1px;
@@ -236,6 +260,10 @@ footer {
         height: 40px;
         width: 40px;
     }
+    #project{
+        width: auto;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -250,6 +278,13 @@ footer {
         text-align: center;
     }
     #skill {
+        width: auto;
+        margin: 5px;
+    }
+    #project-text {
+        text-align: center;
+    }
+    #project {
         width: auto;
         margin: 5px;
     }

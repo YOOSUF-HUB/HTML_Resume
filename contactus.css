@@ -14,20 +14,17 @@ html, body {
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;  /* Center the content vertically */
+    align-items: center;      /* Center the content horizontally */
 }
 
-p:hover{
+/* Hover effect for paragraph elements */
+p:hover {
     color: orangered;
 }
 
 /* Container for centering the content */
 #container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 20px;
 }
@@ -42,13 +39,74 @@ p:hover{
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Contact Information */
+/* Contact Information Styling */
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 #contact-info p {
     color: #ffffff;
     font-size: 1.2em;
     line-height: 1.6;
     margin: 10px 0;
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Contact Form Styling */
+form {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;  /* Add margin to avoid touching the top edge */
+}
+
+/* Form labels */
+form label {
+    color: #EEEEEE;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Form inputs and textarea */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Resize textarea */
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit button */
+form button {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff5722;
 }
 
 /* Footer Styling */
@@ -61,6 +119,7 @@ footer {
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     text-align: center;
+    margin-top: 20px;  /* Add margin to avoid touching the bottom edge */
 }
 
 /* Animations */
@@ -83,6 +142,10 @@ footer {
     #contact-info p {
         font-size: 1em;
     }
+    form input, form textarea, form button {
+        font-size: 1em;
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -91,5 +154,8 @@ footer {
     }
     #contact-info p {
         font-size: 0.9em;
+    }
+    form input, form textarea, form button {
+        width: 90%;
     }
 }
