@@ -1,123 +1,178 @@
-html{
-    scroll-behavior:smooth ;
-}
-
-html, body {
-    padding: 20px;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.headline{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-footer {
-    font-weight: bold;
-    padding: 10px;
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Smooth scrolling */
+html {
+    background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    color: #EEEEEE;
+}
+
+/* Name Styling */
+.headline {
+    color: #EEEEEE;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Social Media Container */
+#social {
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Icons */
+#socialmedia {
+    background-color: #ff6f61;
+    height: 40px; /* Increased height */
+    width: 40px;  /* Increased width */
+    margin: 0 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#socialmedia:hover {
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Text Sections */
+p {
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Other Buttons Section */
+#other {
+    padding: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+#other-button button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#other-button button:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+#other-button a {
+    text-decoration: none;
     color: white;
 }
 
-
-nav{
-    padding: 10px;
-    background-color: antiquewhite;
-}
-
-nav ul{
-    list-style-type: none;
-    justify-content: space-around;
-    display:flex;
-    flex-wrap: wrap; /* Allow items to wrap to new line if needed */
-}
-
-nav a{
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: black;
-}
-
-
-/* Style the button */
-#other-button button {
-    background-color: black; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 15px; /* Some padding */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the buttons appear in a row */
-    font-size: 18px; /* Increase font size */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 5px; /* Rounded corners */
-}
-#socialmedia{
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    display: flex;
-}
-
-#socialmedia{
-    height: 30px;
-    width: 30px;
-}
-
-#socialmedia:hover{
-    height: 32px;
-    width: 32px;
-}
-
-/* Remove underline from the link and set its color */
-#other-button a {
-    text-decoration: none;
-    color: white; /* Match the text color with button text color */
-}
-
-#other-button button a:hover{
+#other-button a:hover {
     font-size: 19px;
 }
 
+/* Social Button List */
+#other-button-social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1000px) {
-    nav ul {
-        /*flex-direction: column; /* Stack nav items vertically on smaller screens */
-        padding: 0;
-        /*align-items: center; */
+#other-button-social li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#other-button-social a {
+    display: inline-block;
+}
+
+/* Footer Styling */
+footer {
+    font-weight: bold;
+    color: #eeeeee;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-    nav ul li {
-        margin: 10px 0; /* Add spacing between nav items */
-    }
-
-    img {
-        height: auto;
-        max-width: 100%; /* Ensure image scales down on smaller screens */
-    }
-
-    #name {
-        height: auto;
-        font-size: 24px; /* Adjust font size */
-    }
-
-    #skill {
-        width: auto;
-        margin: 10px;
-    }
-
-    #other-button button {
-        padding: 10px 20px;
-        font-size: 25px;
-    }
-
-    #socialmedia {
-        height: 50px;
-        width: 50px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
+/* Responsive Styling */
+@media (max-width: 1000px) {
+    .headline {
+        font-size: 2.5em;
+    }
+    #socialmedia {
+        height: 40px;
+        width: 40px;
+    }
+}
 
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .headline {
+        font-size: 1.8em;
+    }
+    #other-button button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    #socialmedia {
+        height: 30px;
+        width: 30px;
+    }
+}
