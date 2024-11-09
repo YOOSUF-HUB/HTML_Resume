@@ -247,53 +247,110 @@ footer {
     }
 }
 
-/* Responsive Styling */
-@media (max-width: 1000px) {
-    #name {
-        font-size: 2.5em;
-    }
-    #skill {
-        width: auto;
-        padding: 15px;
-    }
-    #socialmedia {
-        height: 40px;
-        width: 40px;
-    }
-    #project{
-        width: auto;
-        padding: 15px;
-    }
-}
+/* Media Queries for different screen sizes */
 
-@media (max-width: 480px) {
+/* For tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+    #name {
+        font-size: 2.2em;
+    }
+
+    #socialmedia {
+        height: 35px;
+        width: 35px;
+    }
+
+    #skill, #project {
+        width: auto;
+        margin: 10px;
+    }
+
     nav ul {
         flex-direction: column;
-        padding: 0;
+        align-items: center;
     }
-    #name {
-        font-size: 1.8em;
-    }
-    #skill-text {
-        text-align: center;
-    }
-    #skill {
-        width: auto;
-        margin: 5px;
-    }
-    #project-text {
-        text-align: center;
-    }
-    #project {
-        width: auto;
-        margin: 5px;
-    }
+
     #other-button button {
         padding: 8px 16px;
         font-size: 16px;
     }
+
+    /* Center align text and reduce padding */
+    #skill-text, #project-text {
+        text-align: center;
+        padding: 8px;
+    }
+}
+
+/* For smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #name {
+        font-size: 1.8em;
+    }
+
     #socialmedia {
         height: 30px;
         width: 30px;
     }
+
+    #skill, #project {
+        width: auto;
+        margin: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #other-button button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    #skill-text, #project-text {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    /* Adjusting the profile image */
+    img {
+        height: 300px;
+    }
+
+    /* Adjust social media container */
+    #social {
+        padding: 5px;
+    }
 }
+
+/* For extra small devices (max-width: 360px) */
+@media (max-width: 360px) {
+    #name {
+        font-size: 1.6em;
+    }
+
+    #socialmedia {
+        height: 25px;
+        width: 25px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    #skill, #project {
+        width: auto;
+        margin: 5px;
+    }
+
+    #other-button button {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+
+    #skill-text, #project-text {
+        font-size: 0.9em;
+    }
+}
+

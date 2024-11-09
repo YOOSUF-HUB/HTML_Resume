@@ -135,7 +135,9 @@ footer {
 }
 
 /* Responsive Styling */
-@media (max-width: 1000px) {
+
+/* For medium devices (tablets and up) */
+@media (max-width: 1024px) {
     #name {
         font-size: 2.5em;
     }
@@ -148,6 +150,24 @@ footer {
     }
 }
 
+/* For smaller tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+    #name {
+        font-size: 2.2em;
+    }
+    #contact-info p {
+        font-size: 1em;
+    }
+    form {
+        width: 85%;
+        padding: 15px;
+    }
+    form input, form textarea, form button {
+        font-size: 1em;
+    }
+}
+
+/* For smaller mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
     #name {
         font-size: 1.8em;
@@ -155,7 +175,30 @@ footer {
     #contact-info p {
         font-size: 0.9em;
     }
-    form input, form textarea, form button {
+    form {
         width: 90%;
+        padding: 10px;
+    }
+    form input, form textarea, form button {
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+/* For extra small mobile devices (max-width: 360px) */
+@media (max-width: 360px) {
+    #name {
+        font-size: 1.6em;
+    }
+    #contact-info p {
+        font-size: 0.8em;
+    }
+    form {
+        width: 90%;
+        padding: 8px;
+    }
+    form input, form textarea, form button {
+        font-size: 0.9em;
+        width: 100%;
     }
 }
