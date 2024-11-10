@@ -41,10 +41,12 @@ body {
     width: 40px;  /* Increased width */
     margin: 0 20px;
     transition: transform 0.3s ease, filter 0.3s ease;
+    border: none;
 }
 
 #socialmedia:hover {
     transform: scale(1.2); /* Slightly larger on hover */
+
 }
 
 /* Navbar */
@@ -76,7 +78,6 @@ p {
 /* Other Buttons Section */
 #other {
     padding: 1px;
-    border-radius: 10px;
     margin-top: 10px;
 }
 
