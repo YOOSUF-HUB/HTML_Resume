@@ -161,7 +161,7 @@ p {
 
 #project:hover {
     transform: scale(1.05); /* Slightly larger on hover */
-    background: linear-gradient(135deg, #ff5d5d, #ffffff); /* Target background color */
+    background: linear-gradient(135deg, #ffbe5d, #ffffff); /* Target background color */
 }
 
 
@@ -209,7 +209,7 @@ p {
 }
 
 #construction:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 
 }
 
@@ -224,20 +224,14 @@ p {
     gap: 10px; /* Space between text and cogwheel */
 }
 
-#construction-text:hover {
-    color: white;
-}
 
 /* Cogwheel Animation */
 .cog {
-    font-size: 24px;
-    animation: spin 2s linear infinite;
+    font-size: 30px;
+    animation: spin 4s linear infinite;
     color: rgb(255, 0, 0);
 }
 
-#construction:hover .cog {
-    color: rgb(255, 255, 255);
-}
 
 @keyframes spin {
     from {
