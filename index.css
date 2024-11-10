@@ -152,7 +152,7 @@ p {
 #project {
     width: 400px;
     margin: 20px auto;
-    background: linear-gradient(135deg, #fcffd7, #bdfff4); /* Initial background */
+    background: linear-gradient(135deg, #ffc8b2, #bdfff4); /* Initial background */
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
@@ -161,7 +161,7 @@ p {
 
 #project:hover {
     transform: scale(1.05); /* Slightly larger on hover */
-    background: linear-gradient(135deg, #ffbe5d, #ffffff); /* Target background color */
+    background: linear-gradient(135deg, #ff5d5d, #ffffff); /* Target background color */
 }
 
 
@@ -172,6 +172,30 @@ p {
     padding: 10px;
 }
 
+
+/* Work Section */
+#work {
+    width: 400px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #bcffba, #bdfff4); /* Initial background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, background 0.5s ease; /* Background transition duration */
+}
+
+#work:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    background: linear-gradient(135deg, #86ff5d, #ffffff); /* Target background color */
+}
+
+
+#work-text {
+    font-weight: bolder;
+    color: black;
+    list-style: none;
+    padding: 10px;
+}
 
 /* Container Styling */
 #construction {
@@ -313,7 +337,7 @@ footer {
         width: 35px;
     }
 
-    #skill, #project {
+    #skill, #project, #work {
         width: auto;
         margin: 10px;
     }
@@ -329,7 +353,7 @@ footer {
     }
 
     /* Center align text and reduce padding */
-    #skill-text, #project-text {
+    #skill-text, #project-text , #work-text{
         text-align: center;
         padding: 8px;
     }
@@ -346,7 +370,7 @@ footer {
         width: 30px;
     }
 
-    #skill, #project {
+    #skill, #project, #work {
         width: auto;
         margin: 5px;
     }
@@ -361,7 +385,7 @@ footer {
         font-size: 16px;
     }
 
-    #skill-text, #project-text {
+    #skill-text, #project-text, #work-text {
         text-align: center;
         font-size: 1em;
     }
@@ -392,7 +416,7 @@ footer {
         height: 250px;
     }
 
-    #skill, #project {
+    #skill, #project, #work{
         width: auto;
         margin: 5px;
     }
@@ -402,7 +426,7 @@ footer {
         font-size: 14px;
     }
 
-    #skill-text, #project-text {
+    #skill-text, #project-text, #work-text {
         font-size: 0.9em;
     }
 }
